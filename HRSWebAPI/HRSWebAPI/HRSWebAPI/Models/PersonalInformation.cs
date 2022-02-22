@@ -5,6 +5,15 @@ namespace HRSWebAPI.Models
 {
     public partial class PersonalInformation
     {
+        public PersonalInformation()
+        {
+            CivilServiceEligibilities = new HashSet<CivilServiceEligibility>();
+            EducationalBackgrounds = new HashSet<EducationalBackground>();
+            FamilyBackgrounds = new HashSet<FamilyBackground>();
+            VoluntaryWorks = new HashSet<VoluntaryWork>();
+            WorkExperiences = new HashSet<WorkExperience>();
+        }
+
         public int PersonId { get; set; }
         public string FirstName { get; set; } = null!;
         public string MiddleName { get; set; } = null!;
@@ -46,5 +55,10 @@ namespace HRSWebAPI.Models
         public virtual Country? Country { get; set; }
         public virtual PhilippineDirectory? CurrentCm { get; set; }
         public virtual PhilippineDirectory? PermanentCm { get; set; }
+        public virtual ICollection<CivilServiceEligibility> CivilServiceEligibilities { get; set; }
+        public virtual ICollection<EducationalBackground> EducationalBackgrounds { get; set; }
+        public virtual ICollection<FamilyBackground> FamilyBackgrounds { get; set; }
+        public virtual ICollection<VoluntaryWork> VoluntaryWorks { get; set; }
+        public virtual ICollection<WorkExperience> WorkExperiences { get; set; }
     }
 }
