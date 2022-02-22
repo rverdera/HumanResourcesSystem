@@ -10,11 +10,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<HRSWebAPI.Data.HRISContext>(
-    options =>
-    {
+    options => {
         options.UseSqlServer(builder.Configuration.GetConnectionString("HRIS"));
     });
-
 
 var app = builder.Build();
 
