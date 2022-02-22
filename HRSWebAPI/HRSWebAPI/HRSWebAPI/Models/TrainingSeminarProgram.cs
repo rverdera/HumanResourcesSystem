@@ -12,9 +12,11 @@ namespace HRSWebAPI.Models
 
         public int TrainingSeminarProgramId { get; set; }
         public string TrainingSeminarProgramTitle { get; set; } = null!;
-        public string TrainingSeminarProgramDesc { get; set; } = null!;
+        public string? TrainingSeminarProgramDesc { get; set; }
+        public int LearningAndDevelopmentTypeId { get; set; }
         public bool IsDel { get; set; }
 
+        public virtual LearningAndDevelopmentType LearningAndDevelopmentType { get; set; } = null!;
         public virtual ICollection<LearningAndDevelopment> LearningAndDevelopments { get; set; }
     }
 }

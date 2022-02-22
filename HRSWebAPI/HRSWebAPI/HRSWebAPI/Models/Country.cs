@@ -11,8 +11,8 @@ namespace HRSWebAPI.Models
         }
 
         public int CountryId { get; set; }
-        public string? CountryDesc { get; set; }
-        public bool? IsDel { get; set; }
+        public string CountryDesc { get; set; } = null!;
+        public bool IsDel { get; set; }
 
         public virtual ICollection<PersonalInformation> PersonalInformations { get; set; }
     }

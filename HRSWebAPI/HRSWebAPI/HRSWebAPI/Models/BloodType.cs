@@ -11,8 +11,8 @@ namespace HRSWebAPI.Models
         }
 
         public int BloodTypeId { get; set; }
-        public string? BloodTypeDesc { get; set; }
-        public bool? IsDel { get; set; }
+        public string BloodTypeDesc { get; set; } = null!;
+        public bool IsDel { get; set; }
 
         public virtual ICollection<PersonalInformation> PersonalInformations { get; set; }
     }

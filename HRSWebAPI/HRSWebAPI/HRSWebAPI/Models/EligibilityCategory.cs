@@ -13,7 +13,7 @@ namespace HRSWebAPI.Models
         public int EligibilityCategoryId { get; set; }
         public string EligibilityCategoryName { get; set; } = null!;
         public string? EligibilityCategoryDesc { get; set; }
-        public bool? IsDel { get; set; }
+        public bool IsDel { get; set; }
 
         public virtual ICollection<Eligibility> Eligibilities { get; set; }
     }

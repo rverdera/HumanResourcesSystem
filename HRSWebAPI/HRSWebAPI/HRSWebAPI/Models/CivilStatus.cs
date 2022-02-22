@@ -11,8 +11,8 @@ namespace HRSWebAPI.Models
         }
 
         public int CivilStatusId { get; set; }
-        public string? CivilStatusDesc { get; set; }
-        public bool? IsDel { get; set; }
+        public string CivilStatusDesc { get; set; } = null!;
+        public bool IsDel { get; set; }
 
         public virtual ICollection<PersonalInformation> PersonalInformations { get; set; }
     }

@@ -15,7 +15,7 @@ namespace HRSWebAPI.Controllers.FM
     [ApiController]
     public class BloodTypesController : ControllerBase
     {
-        private readonly HRISContext _context;
+        private readonly HRISContext _context; 
 
         public BloodTypesController(HRISContext context)
         {

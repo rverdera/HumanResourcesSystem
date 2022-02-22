@@ -11,8 +11,8 @@ namespace HRSWebAPI.Models
         }
 
         public int RelationshipId { get; set; }
-        public string? RelationshipDesc { get; set; }
-        public bool? IsDel { get; set; }
+        public string RelationshipDesc { get; set; } = null!;
+        public bool IsDel { get; set; }
 
         public virtual ICollection<FamilyBackground> FamilyBackgrounds { get; set; }
     }
