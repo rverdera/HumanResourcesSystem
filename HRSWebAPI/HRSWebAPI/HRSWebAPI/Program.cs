@@ -1,4 +1,16 @@
-using Microsoft.EntityFrameworkCore;
+
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Threading.Tasks;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using HRSWebAPI.Data;
+global using HRSWebAPI.Models;
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +21,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<HRSWebAPI.Data.HRISContext>(
+builder.Services.AddDbContext<HRISContext>(
     options => {
         options.UseSqlServer(builder.Configuration.GetConnectionString("HRIS"));
     });

@@ -1,13 +1,4 @@
 ﻿#nullable disable
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using HRSWebAPI.Data;
-using HRSWebAPI.Models;
 
 namespace HRSWebAPI.Controllers.FM
 {
@@ -15,7 +6,7 @@ namespace HRSWebAPI.Controllers.FM
     [ApiController]
     public class BloodTypesController : ControllerBase
     {
-        private readonly HRISContext _context; 
+        private readonly HRISContext _context;
 
         public BloodTypesController(HRISContext context)
         {

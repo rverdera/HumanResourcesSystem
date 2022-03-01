@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace HRSWebAPI.Models
+﻿namespace HRSWebAPI.Models
 {
     public partial class BloodType
     {

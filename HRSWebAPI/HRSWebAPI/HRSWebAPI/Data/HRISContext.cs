@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using HRSWebAPI.Models;
-
-namespace HRSWebAPI.Data
+﻿namespace HRSWebAPI.Data
 {
     public partial class HRISContext : DbContext
     {
